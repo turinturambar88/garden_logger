@@ -12,21 +12,34 @@
 // Standard includes
 #include <stdlib.h>
 
+// Project includes
+#include "pin_defines.h"
+
+#include "usart.h"
+#include "adc.h"
+
+
 
 // -------- Global Variables --------- //
 
 
 int main(void) 
 {
-    // -------- Inits --------- //
-    
+    // -------- Inits --------x- //
+    init_usart();
+    init_adc();
+
+    sei(); // Enable interrupts
 
     // ------ Event loop ------ //
     while (1)
     {
+        // Read all sensors
+        
+        // Transmit message
 
-
-
+        // Enter low power mode
+        
     }
     return 0;
 }
