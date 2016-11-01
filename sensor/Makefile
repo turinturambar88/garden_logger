@@ -5,7 +5,7 @@
 ##########------------------------------------------------------##########
 
 MCU   = atmega328p
-F_CPU = 1000000UL  
+F_CPU = 8000000UL  
 BAUD  = 9600UL
 
 ## A directory for common include files and libraries
@@ -151,8 +151,8 @@ flash_usbtiny: flash
 
 ## Mega 48, 88, 168, 328 default values
 
-#LFUSE: Default
-LFUSE = 0x62
+#LFUSE: Internal 8Mhz, no division
+LFUSE = 0xE2
 
 #HFUSE: Default
 HFUSE = 0xD9
