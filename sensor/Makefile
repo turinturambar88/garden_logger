@@ -5,7 +5,7 @@
 ##########------------------------------------------------------##########
 
 MCU   = atmega328p
-F_CPU = 8000000UL  
+F_CPU = 1000000UL  
 BAUD  = 9600UL
 
 ## A directory for common include files and libraries
@@ -18,6 +18,7 @@ LIBDIR = zj_avr_lib
 ##########------------------------------------------------------##########
 
 PROGRAMMER_TYPE = usbtiny
+#PROGRAMMER_TYPE = dragon_isp
 # extra arguments to avrdude: baud rate, chip type, -F flag, etc.
 PROGRAMMER_ARGS = 	
 
@@ -54,8 +55,10 @@ OBJECTS=$(SOURCES:.c=.o)
 HEADERS=$(SOURCES:.c=.h)
 
 ## Compilation options, type man avr-gcc if you're curious.
-CPPFLAGS = -DF_CPU=$(F_CPU) -DBAUD=$(BAUD) -I. -I$(LIBDIR)
-CFLAGS = -Os -g -std=gnu99 -Wall
+CFLAGS += -DF_CPU=$(F_CPU) -DBAUD=$(BAUD) -I. -I$(LIBDIR)
+#Changed previous line from CPPFLAGS to CFLAGS because F_CPU was not passed throught  compiler
+
+CFLAGS += -Os -g -std=gnu99 -Wall
 ## Use short (8-bit) data types 
 CFLAGS += -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums 
 ## Splits up object files per function
@@ -147,9 +150,15 @@ flash_usbtiny: flash
 ##########------------------------------------------------------##########
 
 ## Mega 48, 88, 168, 328 default values
+
+#LFUSE: Default
 LFUSE = 0x62
-HFUSE = 0xdf
-EFUSE = 0x00
+
+#HFUSE: Default
+HFUSE = 0xD9
+
+#EFUSE: Brownout detection at 2.7V
+EFUSE = 0x05
 
 ## Generic 
 FUSE_STRING = -U lfuse:w:$(LFUSE):m -U hfuse:w:$(HFUSE):m -U efuse:w:$(EFUSE):m 
