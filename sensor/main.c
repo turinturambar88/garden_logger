@@ -19,17 +19,20 @@
 #include "adc.h"
 
 
-
 // -------- Global Variables --------- //
 
 
 int main(void) 
 {
-    // -------- Inits --------x- //
+    // -------- Inits --------- //
+    char serialCharacter;
+    
     init_usart();
     init_adc();
 
-    sei(); // Enable interrupts
+    DDRB |= 0b0000001;
+
+    //sei(); // Enable interrupts
 
     // ------ Event loop ------ //
     while (1)
@@ -40,6 +43,21 @@ int main(void)
 
         // Enter low power mode
         
+        
+        
+        serialCharacter = receive_byte();
+        transmit_byte(serialCharacter);
+        
+        
+        if (serialCharacter == 'A')
+        {
+            PORTB = 0b00000001;
+        }
+        else
+        {
+            PORTB = 0b00000000;
+        }
+
     }
     return 0;
 }
