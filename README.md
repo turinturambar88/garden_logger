@@ -19,3 +19,4 @@ Eagle Libraries
 https://github.com/adafruit/Adafruit-Eagle-Library -- last commit: 4abf84c3856535c0ab6ae96ec4be784d7dcc6b3e
 https://github.com/sparkfun/SparkFun-Eagle-Libraries -- last commit: 6ebae9071f809f2e3cb81e523f907661b3316410
 https://github.com/turinturambar88/eagle_library
+https://github.com/wvanvlaenderen/ESP8266-Eagle_Library 845933428153f5d8eeab9bc1324bed3724700b89
