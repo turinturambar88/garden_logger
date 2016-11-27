@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -144,6 +144,47 @@
 <wire x1="70.0001125" y1="0" x2="70.0001125" y2="70.0001125" width="0" layer="20"/>
 <wire x1="70.0001125" y1="70.0001125" x2="0" y2="70.0001125" width="0" layer="20"/>
 <wire x1="0" y1="70.0001125" x2="0" y2="0" width="0" layer="20"/>
+<text x="37.592" y="5.588" size="1.778" layer="25">1</text>
+<text x="37.592" y="3.048" size="1.778" layer="25">0</text>
+<text x="37.592" y="7.874" size="1.778" layer="25">2</text>
+<text x="37.592" y="10.414" size="1.778" layer="25">3</text>
+<text x="37.592" y="12.954" size="1.778" layer="25">4</text>
+<text x="37.592" y="15.494" size="1.778" layer="25">5</text>
+<text x="37.592" y="18.034" size="1.778" layer="25">6</text>
+<text x="37.592" y="20.574" size="1.778" layer="25">7</text>
+<text x="46.482" y="24.384" size="1.778" layer="25">0</text>
+<text x="46.482" y="27.178" size="1.778" layer="25">1</text>
+<text x="46.482" y="29.464" size="1.778" layer="25">2</text>
+<text x="46.482" y="32.004" size="1.778" layer="25">3</text>
+<text x="41.148" y="36.068" size="1.778" layer="25">0</text>
+<text x="41.148" y="38.354" size="1.778" layer="25">1</text>
+<text x="41.148" y="40.894" size="1.778" layer="25">2</text>
+<text x="41.148" y="43.434" size="1.778" layer="25">3</text>
+<text x="41.148" y="45.974" size="1.778" layer="25">4</text>
+<text x="41.148" y="48.768" size="1.778" layer="25">5</text>
+<text x="31.242" y="42.418" size="1.778" layer="25">0</text>
+<text x="28.702" y="42.418" size="1.778" layer="25">1</text>
+<text x="26.162" y="42.418" size="1.778" layer="25">2</text>
+<text x="23.622" y="42.418" size="1.778" layer="25">3</text>
+<text x="21.082" y="42.418" size="1.778" layer="25">4</text>
+<text x="18.796" y="42.418" size="1.778" layer="25">5</text>
+<text x="15.748" y="42.418" size="1.778" layer="25">6</text>
+<text x="13.716" y="42.418" size="1.778" layer="25">7</text>
+<text x="40.386" y="62.992" size="1.016" layer="25">GND</text>
+<text x="54.356" y="62.992" size="1.016" layer="25">GND</text>
+<text x="51.054" y="62.992" size="1.016" layer="25">VCC</text>
+<text x="36.83" y="62.992" size="1.016" layer="25">VCC</text>
+<text x="34.29" y="62.992" size="1.016" layer="25">RX</text>
+<text x="31.75" y="62.992" size="1.016" layer="25">TX</text>
+<text x="44.704" y="62.992" size="1.016" layer="25">SCL</text>
+<text x="47.752" y="62.992" size="1.016" layer="25">SDA</text>
+<text x="55.118" y="10.922" size="1.778" layer="25" rot="R90">TX</text>
+<text x="57.658" y="10.922" size="1.778" layer="25" rot="R90">RX</text>
+<text x="52.578" y="10.922" size="1.778" layer="25" rot="R90">PD</text>
+<text x="50.038" y="10.922" size="1.27" layer="25" rot="R90">RST</text>
+<text x="47.498" y="10.922" size="1.778" layer="25" rot="R90">V+</text>
+<text x="21.336" y="69.342" size="1.778" layer="25" rot="R180">+</text>
+<text x="23.368" y="69.342" size="1.778" layer="25" rot="R180">-</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -2106,10 +2147,10 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="rcl" package="C0805" value=".1uF" x="13.97" y="34.29" rot="R90"/>
-<element name="C2" library="rcl" package="C0805" value=".1uF" x="33.02" y="25.4" rot="R270"/>
-<element name="C3" library="rcl" package="C0805" value="22pF" x="13.97" y="21.59" rot="R315"/>
-<element name="C4" library="rcl" package="C0805" value="22pF" x="17.78" y="17.78" rot="R135"/>
+<element name="C1" library="rcl" package="C0805" value=".1uF" x="13.97" y="34.29" smashed="yes" rot="R90"/>
+<element name="C2" library="rcl" package="C0805" value=".1uF" x="33.02" y="25.4" smashed="yes" rot="R270"/>
+<element name="C3" library="rcl" package="C0805" value="22pF" x="13.97" y="21.59" smashed="yes" rot="R315"/>
+<element name="C4" library="rcl" package="C0805" value="22pF" x="17.78" y="17.78" smashed="yes" rot="R135"/>
 <element name="I2C0" library="SparkFun-Connectors" package="1X04" value="" x="54.61" y="66.04" smashed="yes" rot="R180">
 <attribute name="NAME" x="59.7662" y="66.7512" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="55.88" y="69.215" size="1.27" layer="27" rot="R180"/>
@@ -2118,28 +2159,48 @@ design rules under a new name.</description>
 <attribute name="NAME" x="59.7662" y="61.6712" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="55.88" y="64.135" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="J1" library="SparkFun-Connectors" package="2X3" value="AVR_SPI_PRG_6PTH" x="5.08" y="39.37"/>
-<element name="PE" library="SparkFun-Connectors" package="1X04" value="" x="44.45" y="25.4" rot="R90">
+<element name="J1" library="SparkFun-Connectors" package="2X3" value="AVR_SPI_PRG_6PTH" x="5.08" y="39.37" smashed="yes"/>
+<element name="PE" library="SparkFun-Connectors" package="1X04" value="" x="44.45" y="25.4" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="CONN-09696" x="44.45" y="25.4" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="43.1292" y="34.7218" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="47.625" y="24.13" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="COMPAT1" library="SparkFun-Retired" package="SJ_2S-NO" value="SOLDERJUMPER-OLDNO" x="17.78" y="35.56" rot="R90"/>
-<element name="COMPAT2" library="SparkFun-Retired" package="SJ_2S-NO" value="SOLDERJUMPER-OLDNO" x="13.97" y="29.21" rot="R180"/>
-<element name="PB" library="SparkFun-Connectors" package="1X08_ROUND" value="" x="40.64" y="21.59" rot="R270">
+<element name="COMPAT1" library="SparkFun-Retired" package="SJ_2S-NO" value="SOLDERJUMPER-OLDNO" x="17.78" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="16.51" y="34.652" size="0.4064" layer="25" rot="R90"/>
+</element>
+<element name="COMPAT2" library="SparkFun-Retired" package="SJ_2S-NO" value="SOLDERJUMPER-OLDNO" x="13.97" y="29.21" smashed="yes" rot="R180">
+<attribute name="NAME" x="15.386" y="30.988" size="0.4064" layer="25" rot="R180"/>
+</element>
+<element name="PB" library="SparkFun-Connectors" package="1X08_ROUND" value="" x="40.64" y="21.59" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="CONN-08437" x="40.64" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="39.4208" y="23.1902" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="37.465" y="22.86" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="PC" library="SparkFun-Connectors" package="1X06" value="" x="39.37" y="36.83" rot="R90">
+<element name="PC" library="SparkFun-Connectors" package="1X06" value="" x="39.37" y="36.83" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="CONN-08437" x="39.37" y="36.83" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="38.0492" y="51.2318" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="42.545" y="35.56" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="PD" library="SparkFun-Connectors" package="1X08_ROUND" value="" x="31.75" y="45.72" rot="R180">
+<element name="PD" library="SparkFun-Connectors" package="1X08_ROUND" value="" x="31.75" y="45.72" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="CONN-08437" x="31.75" y="45.72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="35.8902" y="46.4312" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="33.02" y="48.895" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R1" library="rcl" package="R0805" value="10k" x="15.24" y="50.8" rot="R90"/>
-<element name="RESET" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="SWITCH-MOMENTARY-2PTH" x="6.35" y="52.07">
+<element name="R1" library="rcl" package="R0805" value="10k" x="15.24" y="50.8" smashed="yes" rot="R90"/>
+<element name="RESET" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="SWITCH-MOMENTARY-2PTH" x="6.35" y="52.07" smashed="yes">
 <attribute name="PROD_ID" value=" SWCH-08441" x="6.35" y="52.07" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="1.524" y="55.88" size="1.27" layer="25" ratio="10"/>
 </element>
-<element name="U$1" library="zjembedded_eagle" package="TQFP32-08" value="ATMEGA328PB_TQFP" x="26.11005625" y="31.19005625"/>
-<element name="U$2" library="esp8266modules" package="ESP01" value="ESP01" x="52.07" y="-2.54" rot="R180"/>
-<element name="Y1" library="SparkFun-FreqCtrl" package="HC49US" value="" x="19.05" y="22.86" rot="R315"/>
+<element name="U$1" library="zjembedded_eagle" package="TQFP32-08" value="ATMEGA328PB_TQFP" x="26.11005625" y="31.19005625" smashed="yes">
+<attribute name="VALUE" x="23.57005625" y="33.73005625" size="0.4064" layer="27"/>
+</element>
+<element name="U$2" library="esp8266modules" package="ESP01" value="ESP01" x="52.07" y="-2.54" smashed="yes" rot="R180">
+<attribute name="NAME" x="59.07" y="-18.54" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="59.832" y="7.698" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="Y1" library="SparkFun-FreqCtrl" package="HC49US" value="" x="19.05" y="22.86" smashed="yes" rot="R315">
+<attribute name="VALUE" x="12.674015625" y="23.668221875" size="1.27" layer="27" ratio="10" rot="R315"/>
+</element>
 <element name="USART1" library="SparkFun-Connectors" package="1X04" value="" x="40.64" y="60.96" rot="R180">
 <attribute name="PROD_ID" value="CONN-09696" x="40.64" y="60.96" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
@@ -2148,17 +2209,17 @@ design rules under a new name.</description>
 <attribute name="NAME" x="41.9862" y="69.0372" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="41.91" y="69.215" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C5" library="rcl" package="C0805" value=".1uF" x="39.37" y="30.48"/>
+<element name="C5" library="rcl" package="C0805" value=".1uF" x="39.37" y="30.48" smashed="yes"/>
 <element name="AREF" library="SparkFun-Connectors" package="1X01" value="" x="35.56" y="30.48" smashed="yes">
 <attribute name="NAME" x="32.9438" y="32.3088" size="1.27" layer="25"/>
 <attribute name="VALUE" x="34.29" y="27.305" size="1.27" layer="27"/>
 </element>
-<element name="R2" library="rcl" package="R0805" value="330" x="12.7" y="50.8" rot="R270"/>
-<element name="R3" library="rcl" package="R0805" value="330" x="7.62" y="35.56" rot="R270"/>
-<element name="R4" library="rcl" package="R0805" value="330" x="5.08" y="35.56" rot="R270"/>
-<element name="R5" library="rcl" package="R0805" value="330" x="12.7" y="41.91" rot="R90"/>
-<element name="L1" library="SparkFun-Passives" package="0805" value="10uH" x="35.56" y="25.4" rot="R90"/>
-<element name="L2" library="SparkFun-Passives" package="0805" value="10uH" x="11.43" y="31.75"/>
+<element name="R2" library="rcl" package="R0805" value="330" x="12.7" y="50.8" smashed="yes" rot="R270"/>
+<element name="R3" library="rcl" package="R0805" value="330" x="7.62" y="35.56" smashed="yes" rot="R270"/>
+<element name="R4" library="rcl" package="R0805" value="330" x="5.08" y="35.56" smashed="yes" rot="R270"/>
+<element name="R5" library="rcl" package="R0805" value="330" x="12.7" y="41.91" smashed="yes" rot="R90"/>
+<element name="L1" library="SparkFun-Passives" package="0805" value="10uH" x="35.56" y="25.4" smashed="yes" rot="R90"/>
+<element name="L2" library="SparkFun-Passives" package="0805" value="10uH" x="11.43" y="31.75" smashed="yes"/>
 <element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="3.81" y="45.72"/>
 <element name="H1" library="SparkFun-Electromechanical" package="STAND-OFF" value="STAND-OFF" x="5.08" y="5.08"/>
 <element name="H2" library="SparkFun-Electromechanical" package="STAND-OFF" value="STAND-OFF" x="64.9201125" y="5.08"/>
@@ -2185,24 +2246,24 @@ design rules under a new name.</description>
 <element name="BUTTON1" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="SWITCH-MOMENTARY-2PTH" x="13.97" y="5.08" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value=" SWCH-08441" x="13.97" y="5.08" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R9" library="rcl" package="R0805" value="10k" x="13.97" y="10.16"/>
+<element name="R9" library="rcl" package="R0805" value="10k" x="13.97" y="10.16" smashed="yes"/>
 <element name="BUTTON2" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="SWITCH-MOMENTARY-2PTH" x="22.86" y="5.08" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value=" SWCH-08441" x="22.86" y="5.08" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="BUTTON3" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="SWITCH-MOMENTARY-2PTH" x="31.75" y="5.08" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value=" SWCH-08441" x="31.75" y="5.08" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R10" library="rcl" package="R0805" value="10k" x="22.86" y="10.16"/>
-<element name="R11" library="rcl" package="R0805" value="10k" x="31.75" y="10.16"/>
-<element name="J2" library="SparkFun-Connectors" package="POWER_JACK_PTH" value="POWER_JACKPTH" x="13.716" y="69.85" rot="R180">
+<element name="R10" library="rcl" package="R0805" value="10k" x="22.86" y="10.16" smashed="yes"/>
+<element name="R11" library="rcl" package="R0805" value="10k" x="31.75" y="10.16" smashed="yes"/>
+<element name="J2" library="SparkFun-Connectors" package="POWER_JACK_PTH" value="POWER_JACKPTH" x="13.716" y="69.85" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="CONN-08197" x="13.716" y="69.85" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="POWER" library="SparkFun-Connectors" package="1X02" value="" x="20.574" y="65.786" smashed="yes">
 <attribute name="VALUE" x="19.304" y="62.611" size="1.27" layer="27"/>
 </element>
-<element name="U$3" library="zjembedded_eagle" package="SOT23-3" value="MCP1702" x="25.4" y="57.15" rot="R270"/>
-<element name="C8" library="rcl" package="C0805" value="1uF" x="29.21" y="59.69" rot="R90"/>
-<element name="C9" library="rcl" package="C0805" value="1uF" x="21.59" y="53.34" rot="R180"/>
+<element name="U$3" library="zjembedded_eagle" package="SOT23-3" value="MCP1702" x="25.4" y="57.15" smashed="yes" rot="R270"/>
+<element name="C8" library="rcl" package="C0805" value="1uF" x="29.21" y="59.69" smashed="yes" rot="R90"/>
+<element name="C9" library="rcl" package="C0805" value="1uF" x="21.59" y="53.34" smashed="yes" rot="R180"/>
 <element name="VCC" library="SparkFun-Connectors" package="1X08_ROUND" value="" x="49.53" y="16.51" smashed="yes">
 <attribute name="PROD_ID" value="CONN-08437" x="49.53" y="16.51" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="44.1198" y="15.7988" size="1.27" layer="25" ratio="10"/>
@@ -2213,14 +2274,17 @@ design rules under a new name.</description>
 <attribute name="NAME" x="44.1198" y="18.5928" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="48.26" y="15.875" size="1.27" layer="27"/>
 </element>
-<element name="L3" library="SparkFun-Passives" package="0805" value="10uH" x="25.4" y="53.34"/>
-<element name="C6" library="SparkFun-Passives" package="CPOL-RADIAL-100UF-25V" value="100uF" x="31.75" y="52.07" rot="R90"/>
-<element name="F1" library="SparkFun-PowerIC" package="PTC-1206" value="PTCSMD" x="21.844" y="61.722">
+<element name="L3" library="SparkFun-Passives" package="0805" value="10uH" x="25.4" y="53.34" smashed="yes"/>
+<element name="C6" library="SparkFun-Passives" package="CPOL-RADIAL-100UF-25V" value="100uF" x="31.75" y="52.07" smashed="yes" rot="R90"/>
+<element name="F1" library="SparkFun-PowerIC" package="PTC-1206" value="PTCSMD" x="21.844" y="61.722" smashed="yes">
 <attribute name="PROD_ID" value="RES-11150" x="21.844" y="61.722" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="20.32" y="62.992" size="0.4064" layer="25"/>
 </element>
-<element name="PWR_LED" library="led" package="CHIPLED_0805" value="" x="26.67" y="49.53" rot="R90"/>
-<element name="R12" library="rcl" package="R0805" value="330" x="21.59" y="49.53"/>
-<element name="C7" library="rcl" package="C0805" value=".1uF" x="11.43" y="27.94" rot="R270"/>
+<element name="PWR_LED" library="led" package="CHIPLED_0805" value="" x="26.67" y="49.53" smashed="yes" rot="R90">
+<attribute name="VALUE" x="27.94" y="52.07" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="R12" library="rcl" package="R0805" value="330" x="21.59" y="49.53" smashed="yes"/>
+<element name="C7" library="rcl" package="C0805" value=".1uF" x="11.43" y="27.94" smashed="yes" rot="R270"/>
 <element name="PROTO0" library="SparkFun-Connectors" package="1X08_ROUND" value="" x="49.53" y="22.86" smashed="yes">
 <attribute name="PROD_ID" value="CONN-08437" x="49.53" y="22.86" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="48.26" y="19.685" size="1.27" layer="27"/>
@@ -2281,12 +2345,14 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="CONN-08437" x="49.53" y="58.42" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="48.26" y="55.245" size="1.27" layer="27"/>
 </element>
-<element name="C10" library="SparkFun-Passives" package="CPOL-RADIAL-100UF-25V" value="100uF" x="62.23" y="11.43"/>
+<element name="C10" library="SparkFun-Passives" package="CPOL-RADIAL-100UF-25V" value="100uF" x="62.23" y="11.43" smashed="yes"/>
 <element name="VRAW" library="SparkFun-Connectors" package="1X01" value="" x="27.178" y="65.405" smashed="yes">
 <attribute name="NAME" x="26.5938" y="67.2338" size="1.27" layer="25"/>
 <attribute name="VALUE" x="25.908" y="62.23" size="1.27" layer="27"/>
 </element>
-<element name="J3" library="SparkFun-Connectors" package="1X05" value="" x="56.896" y="9.271" rot="R180"/>
+<element name="J3" library="SparkFun-Connectors" package="1X05" value="" x="56.896" y="9.271" smashed="yes" rot="R180">
+<attribute name="VALUE" x="58.166" y="12.446" size="1.27" layer="27" rot="R180"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -3006,31 +3072,31 @@ design rules under a new name.</description>
 <contactref element="PWR_LED" pad="C"/>
 <wire x1="22.54" y1="49.53" x2="25.62" y2="49.53" width="0.254" layer="1"/>
 </signal>
-<signal name="N$6">
+<signal name="ESP01_VCC">
 <contactref element="U$2" pad="VCC"/>
 <contactref element="J3" pad="5"/>
 <wire x1="46.736" y1="9.271" x2="46.736" y2="7.1765" width="0.254" layer="1"/>
 <wire x1="46.736" y1="7.1765" x2="48.275" y2="5.6375" width="0.254" layer="1"/>
 </signal>
-<signal name="N$7">
+<signal name="ESP01_RST">
 <contactref element="J3" pad="4"/>
 <contactref element="U$2" pad="RST"/>
 <wire x1="49.276" y1="9.271" x2="49.276" y2="7.1765" width="0.254" layer="1"/>
 <wire x1="49.276" y1="7.1765" x2="50.815" y2="5.6375" width="0.254" layer="1"/>
 </signal>
-<signal name="N$12">
+<signal name="ESP01_CH_PD">
 <contactref element="U$2" pad="CH_PD"/>
 <contactref element="J3" pad="3"/>
 <wire x1="51.816" y1="9.271" x2="51.816" y2="7.1765" width="0.254" layer="1"/>
 <wire x1="51.816" y1="7.1765" x2="53.355" y2="5.6375" width="0.254" layer="1"/>
 </signal>
-<signal name="N$13">
+<signal name="ESP01_TXD">
 <contactref element="U$2" pad="TX"/>
 <contactref element="J3" pad="2"/>
 <wire x1="54.356" y1="9.271" x2="54.356" y2="7.1765" width="0.254" layer="1"/>
 <wire x1="54.356" y1="7.1765" x2="55.895" y2="5.6375" width="0.254" layer="1"/>
 </signal>
-<signal name="N$23">
+<signal name="ESP01_RXD">
 <contactref element="J3" pad="1"/>
 <contactref element="U$2" pad="RX"/>
 <wire x1="48.275" y1="3.0975" x2="48.275" y2="3.033" width="0.254" layer="1"/>

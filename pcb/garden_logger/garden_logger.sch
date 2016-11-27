@@ -22172,35 +22172,35 @@ if not including inductors</text>
 <wire x1="-15.24" y1="160.02" x2="-15.24" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="ESP01_VCC" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="VCC"/>
 <pinref part="J3" gate="G$1" pin="5"/>
 <wire x1="304.8" y1="81.28" x2="314.96" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="ESP01_RST" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="4"/>
 <pinref part="U$2" gate="G$1" pin="RST"/>
 <wire x1="314.96" y1="83.82" x2="304.8" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="ESP01_CH_PD" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="CH_PD"/>
 <pinref part="J3" gate="G$1" pin="3"/>
 <wire x1="304.8" y1="86.36" x2="314.96" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="ESP01_TXD" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="TXD"/>
 <pinref part="J3" gate="G$1" pin="2"/>
 <wire x1="304.8" y1="88.9" x2="314.96" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$23" class="0">
+<net name="ESP01_RXD" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="1"/>
 <wire x1="314.96" y1="91.44" x2="314.96" y2="96.52" width="0.1524" layer="91"/>
